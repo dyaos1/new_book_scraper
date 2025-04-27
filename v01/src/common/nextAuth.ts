@@ -59,7 +59,11 @@ export const authOptions: AuthOptions = {
     async jwt({ token, user }) {
       if (user) { // User is available during sign-in
         token.id = user.id
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         token.isAdmin = user.isAdmin ?? false
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         token.isValid = user.isValid ?? true
       }
       return { ...token }

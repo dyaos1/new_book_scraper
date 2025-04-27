@@ -3,16 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-geist-mono: ${geistMono.style.fontFamily};
-  --font-geist-sans: ${geistSans.style.fontFamily};
+  /* --font-geist-mono: ${geistMono.style.fontFamily};
+  --font-geist-sans: ${geistSans.style.fontFamily}; */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  /* --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-main: var(--font-playFair);
+  --font-main: var(--font-playFair); */
 }
 
 .playfair-text {

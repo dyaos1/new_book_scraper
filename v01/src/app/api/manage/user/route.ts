@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
   const offset = Number.parseInt(searchParams.get("offset") || "0")
-  const limit = Number.parseInt(searchParams.get("limit") || "10")
+  // const limit = Number.parseInt(searchParams.get("limit") || "10")
 
   const users = await prisma.user.findMany({
     select: {

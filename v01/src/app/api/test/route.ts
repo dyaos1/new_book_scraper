@@ -1,4 +1,3 @@
-import { prisma } from "@/common/prisma";
 import { PuppeteerLock } from "@/common/puppeteerLock";
 import { NextResponse } from "next/server";
 

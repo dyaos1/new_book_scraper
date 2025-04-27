@@ -17,6 +17,7 @@ export default function Paginator({
   useEffect(() => {
     setPaginatorUnits(paginatorUnitGenerator(totalCount, currentPage))
     setOffset((currentPage - 1) * 10)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage, totalCount])
 
   return (
