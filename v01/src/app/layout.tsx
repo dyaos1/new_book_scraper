@@ -3,27 +3,27 @@ import "./globals.css";
 import getCurrentUser from "./action/getCurrentUser";
 import type { Metadata } from "next";
 // import { User } from "@prisma/client";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Playfair } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
+// import { Playfair } from "next/font/google";
 
-const playFair = Playfair({
-  variable: "--font-playFair",
-  weight: ["400", "600", "700"],
-  subsets: ["latin"],
-  display: "swap",
-})
+// const playFair = Playfair({
+//   variable: "--font-playFair",
+//   weight: ["400", "600", "700"],
+//   subsets: ["latin"],
+//   display: "swap",
+// })
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+//   display: "swap",
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,7 +40,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${playFair.variable} ${geistMono.variable} ${geistSans.variable}`}>
+      <body>
         <div>
           <NavBar currentUser={currentUserSession} />
         </div>
