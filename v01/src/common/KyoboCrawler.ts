@@ -1,0 +1,1 @@
+const baseUrl = "https://product.kyobobook.co.kr/category/KOR/33#?page=1&type=new&per=50&sort=new";
